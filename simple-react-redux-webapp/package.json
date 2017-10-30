@@ -4,7 +4,7 @@
   "description": "tbd",
   "main": " ",
   "scripts": {
-    "start_": "webpack-dev-server --open --config config/webpack.dev.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.dev.config.js",
     "start": "cross-env NODE_ENV=development node server.js",
     "test": "yarn test"
   },
@@ -45,9 +45,6 @@
     "redux-thunk": "^2.2.0",
     "styled-components": "^2.2.3",
     "webpack": "^3.8.1",
-    "webpack-dev-middleware": "^1.12.0",
-    "webpack-dev-server": "^2.9.3",
-    "webpack-hot-middleware": "^2.20.0",
-    "webpack-merge": "^4.1.0"
+    "webpack-dev-server": "^2.9.3"
   }
 }
