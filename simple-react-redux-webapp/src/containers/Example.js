@@ -7,13 +7,13 @@ import {
 
 const Home = () => (
   <div>
-    <h2>Hodme</h2>
+    <h2>Hodddme</h2>
   </div>
 );
 
 const About = () => (
   <div>
-    <h2>Abddout</h2>
+    <h2>A===bddout</h2>
   </div>
 );
 
