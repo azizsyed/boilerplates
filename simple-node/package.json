@@ -1,0 +1,29 @@
+{
+  "name": "azizsyed--boilerplate--simple-node",
+  "version": "0.0.1",
+  "author": "Aziz Syed",
+  "description": "Simple node boilerplate",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "yarn run clean && webpack",
+    "lint": "eslint --ignore-path .gitignore --ignore-pattern dist -- .",
+    "tdd": "NODE_ENV=test jest --watchAll",
+    "test": "NODE_ENV=test jest --coverage"
+  },
+  "dependencies": {
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.0.1",
+    "babel-loader": "7.1.2",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "eslint": "4.10.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "jest": "21.2.1",
+    "rimraf": "2.6.2",
+    "uglifyjs-webpack-plugin": "1.0.1",
+    "webpack": "3.8.1"
+  }
+}
