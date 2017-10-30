@@ -16,7 +16,7 @@ const NodeService = {
 
 const config = {
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, '../dist'),
     filename: 'bundle.js',
   },
   resolve: {
