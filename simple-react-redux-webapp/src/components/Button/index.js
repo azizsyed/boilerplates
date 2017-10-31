@@ -1,3 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default (props) => <button onClick={() => console.log('clicked!')}>Click me!</button>;
+const Button = props => <button {...props}>{props.children}</button>;
+
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default Button;

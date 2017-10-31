@@ -8,7 +8,9 @@
     "build": "yarn clean && cross-env NODE_ENV=production webpack",
     "lint": "eslint --ignore-path .gitignore --ignore-pattern dist -- .",
     "start": "cross-env NODE_ENV=development node server.js",
-    "test": "yarn test"
+    "test": "yarn test",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -45,6 +47,7 @@
     "react-router-dom": "^4.2.2",
     "recompose": "^0.26.0",
     "redux": "^3.7.2",
+    "redux-form": "^7.1.2",
     "redux-thunk": "^2.2.0",
     "reselect": "^3.0.1",
     "rimraf": "^2.6.2",
@@ -52,5 +55,10 @@
     "uglifyjs-webpack-plugin": "^1.0.1",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.3"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.13",
+    "@storybook/addon-links": "^3.2.13",
+    "@storybook/react": "^3.2.13"
   }
 }
